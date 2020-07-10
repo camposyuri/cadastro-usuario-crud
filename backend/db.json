@@ -14,6 +14,11 @@
       "name": "teste",
       "email": "teste@email.com",
       "id": 3
+    },
+    {
+      "name": "Yuri Campos",
+      "email": "yurinapoleao@gmail.com",
+      "id": 4
     }
   ]
 }
