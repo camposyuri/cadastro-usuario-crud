@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Arthur Nogueira",
       "email": "arthur@negocio.com.br"
+    },
+    {
+      "name": "teste",
+      "email": "teste@email.com",
+      "id": 3
     }
   ]
 }
