@@ -21,14 +21,14 @@ const Header = (props) => {
     <>
       <Navbar color="dark" dark expand="md">
         <NavbarBrand tag={Link} to="/">
-          Cadastro Usuário
+          CRUD
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={open} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink tag={Link} to="/users">
-                Usuários
+                Users
               </NavLink>
             </NavItem>
           </Nav>
