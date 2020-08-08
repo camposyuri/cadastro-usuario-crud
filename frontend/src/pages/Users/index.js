@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import api from "../../services/";
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 import TableList from "../../components/TableList";
 import TableHeader from "../../components/TableList/TableHeader";
 import TableBody from "../../components/TableList/TableBody";
@@ -16,6 +16,14 @@ const Users = () => {
     });
   }, []);
 
+  const deleteUsers = (id) => {
+    console.log(id);
+    api.delete(`/api/users/${id}`).then((res) => {
+      const filters = data.filter((item) => item.id !== id);
+      setData(filters);
+    });
+  };
+
   return (
     <>
       <Container>
@@ -27,8 +35,21 @@ const Users = () => {
           <TableHeader name="Name" email="E-mail" actions="Actions" />
           {data.map((user) => {
             return (
-              <TableBody key={user.id} name={user.name} email={user.email}>
-                <Link className="btn btn-warning">Edit</Link>
+              <TableBody
+                key={user.id}
+                id={user.id}
+                name={user.name}
+                email={user.email}
+              >
+                <Link className="btn btn-warning" to={"/api/users" + user.id}>
+                  Edit
+                </Link>
+                <Button
+                  className="btn btn-danger ml-2"
+                  onClick={() => deleteUsers(user.id)}
+                >
+                  Delete
+                </Button>
               </TableBody>
             );
           })}
