@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Users = () => {
   const [data, setData] = useState([]);
 
-  // Listando minha API
+  // GET: Listando minha API
   useEffect(() => {
     api.get("/users").then((res) => {
       setData(res.data);

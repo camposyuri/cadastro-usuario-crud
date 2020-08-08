@@ -8,6 +8,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Container,
 } from "reactstrap";
 
 const Header = (props) => {
@@ -20,19 +21,21 @@ const Header = (props) => {
   return (
     <>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand tag={Link} to="/">
-          CRUD
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={open} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink tag={Link} to="/users">
-                Users
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
+        <Container>
+          <NavbarBrand tag={Link} to="/">
+            User register
+          </NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={open} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink tag={Link} to="/users">
+                  Users
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
       </Navbar>
     </>
   );

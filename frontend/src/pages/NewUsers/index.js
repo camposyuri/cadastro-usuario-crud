@@ -17,7 +17,7 @@ const NewUsers = (props) => {
     });
   };
 
-  // Salvando na API
+  // POST: Salvando na API e adicionando um novo usuário
   const save = () => {
     api
       .post("/users", {
