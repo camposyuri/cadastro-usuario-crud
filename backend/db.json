@@ -1,19 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Thomas Reis",
-      "email": "thomas@trabalha.com.br"
-    },
-    {
       "id": 2,
       "name": "Arthur Nogueira",
       "email": "arthur@negocio.com.br"
-    },
-    {
-      "name": "teste",
-      "email": "teste@email.com",
-      "id": 3
     },
     {
       "name": "Yuri Campos",
@@ -21,8 +11,8 @@
       "id": 4
     },
     {
-      "name": "Yudi Campos",
-      "email": "yudicampos@gamil.com",
+      "name": "teste",
+      "email": "teste@teste.com.br",
       "id": 5
     }
   ]
