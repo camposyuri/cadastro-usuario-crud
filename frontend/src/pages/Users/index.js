@@ -19,8 +19,8 @@ const Users = () => {
   // Function delete users
   const deleteUsers = (id) => {
     api.delete("/users/" + id).then((res) => {
-      const filtrado = data.filter((item) => item.id !== id);
-      setData(filtrado);
+      const filters = data.filter((item) => item.id !== id);
+      setData(filters);
     });
   };
 

@@ -9,7 +9,7 @@ const NewUsers = (props) => {
   });
   const [success, setSuccess] = useState(false);
 
-  // Pegar o valor de um form
+  // Take value of a form
   const handleValue = (field) => (event) => {
     setForm({
       ...form,
@@ -17,7 +17,7 @@ const NewUsers = (props) => {
     });
   };
 
-  // POST: Salvando na API e adicionando um novo usuário
+  // POST: Saving a new users in API
   const save = () => {
     api
       .post("/users", {
