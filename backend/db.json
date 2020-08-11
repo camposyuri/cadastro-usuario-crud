@@ -1,19 +1,9 @@
 {
   "users": [
     {
-      "id": 2,
-      "name": "Arthur Nogueira",
-      "email": "arthur@negocio.com.br"
-    },
-    {
       "name": "Yuri Campos",
       "email": "yurinapoleao@gmail.com",
-      "id": 4
-    },
-    {
-      "name": "teste",
-      "email": "teste@teste.com.br",
-      "id": 5
+      "id": 1
     }
   ]
 }
